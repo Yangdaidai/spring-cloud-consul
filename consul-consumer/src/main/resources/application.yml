@@ -1,0 +1,16 @@
+server:
+  port: 9006
+
+spring:
+  application:
+    name: consul-consumer
+
+  cloud:
+    consul:
+      host: localhost    # Consul agent hostname. Defaults to 'localhost'
+      port: 8500
+      discovery:
+        prefer-ip-address: true
+        serviceName: service-consumer
+        health-check-interval: 1s
+

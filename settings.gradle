@@ -1,0 +1,4 @@
+rootProject.name = 'spring-cloud-consul'
+include 'consul-producer'
+include 'consul-consumer'
+
